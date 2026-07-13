@@ -1,0 +1,22 @@
+package ep3;
+
+import java.sql.SQLException;
+
+public class Main {
+	public static void main (String[] args) throws SQLException{
+		// step 2
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+		}catch(Exception ex) {
+			System.out.println(ex.getMessage());
+		}
+		
+		// step 3
+		String url="jdbc:mysql://localhost:3306/parul";
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/parul","root","ansh2712");
+				
+		Statement st = conn.createStatement();
+		st.executeUpdate("Insert into Students values(40, 'ansh','baroda')");
+				
+	}
+}
