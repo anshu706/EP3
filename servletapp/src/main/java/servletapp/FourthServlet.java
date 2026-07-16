@@ -8,6 +8,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 @WebServlet("/fourth")
 public class FourthServlet extends HttpServlet{
@@ -15,7 +16,12 @@ public class FourthServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
 		System.out.println("This is Fourth Servlet");
 		
-		ServletContext ctx = getServletContext();
-		System.out.println(ctx.getAttribute("uni"));
+		// CONTEXT
+//		ServletContext ctx = getServletContext();
+//		System.out.println(ctx.getAttribute("uni"));
+		
+		// SESSION
+		HttpSession ss = req.getSession();
+		System.out.println(ss.getAttribute("username"));
 	}
 }
