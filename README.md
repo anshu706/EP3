@@ -15,6 +15,7 @@ Quick links to the main files in this workspace.
 - [ThirdServlet.java](servletapp/src/main/java/servletapp/ThirdServlet.java)
 - [FourthServlet.java](servletapp/src/main/java/servletapp/FourthServlet.java)
 - [LoginServlet.java](servletapp/src/main/java/servletapp/LoginServlet.java)
+- [EmailServlet.java](servletapp/src/main/java/servletapp/EmailServlet.java)
 
 ### Web pages
 
