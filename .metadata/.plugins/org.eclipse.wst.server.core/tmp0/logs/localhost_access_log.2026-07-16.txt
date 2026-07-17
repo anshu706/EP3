@@ -12,3 +12,8 @@
 0:0:0:0:0:0:0:1 - - [16/Jul/2026:14:15:29 +0530] "GET /favicon.ico HTTP/1.1" 404 763
 0:0:0:0:0:0:0:1 - - [16/Jul/2026:14:15:47 +0530] "GET /servletapp/third?roll=128&firstname=wow&city=hellol HTTP/1.1" 200 26
 0:0:0:0:0:0:0:1 - - [16/Jul/2026:14:16:02 +0530] "GET /servletapp/login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jul/2026:16:14:22 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [16/Jul/2026:16:14:23 +0530] "GET /servletapp/ HTTP/1.1" 200 441
+0:0:0:0:0:0:0:1 - - [16/Jul/2026:16:14:24 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [16/Jul/2026:16:14:56 +0530] "GET /servletapp/third?roll=7823&firstname=wowo&city=wowe HTTP/1.1" 200 26
+0:0:0:0:0:0:0:1 - - [16/Jul/2026:16:15:09 +0530] "GET /servletapp/login HTTP/1.1" 200 -

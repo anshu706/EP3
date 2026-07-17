@@ -2,6 +2,7 @@ package servletapp;
 
 import java.io.IOException;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -15,10 +16,17 @@ public class LoginServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
 		
-		// HARD CODING SESSION
-		String username="ansh";
+		System.out.println("Login Success");
+		// login success
+		RequestDispatcher rd=req.getRequestDispatcher("/email");
+		rd.include(req, resp);
 		
-		HttpSession ss = req.getSession();
-		ss.setAttribute("username", username);
+		
+		
+		// HARD CODING SESSION
+//		String username="ansh";
+//		
+//		HttpSession ss = req.getSession();
+//		ss.setAttribute("username", username);
 	}
 }
